@@ -504,24 +504,24 @@
                         <form action="https://formsubmit.co/8bb3dc66b2949816642c37f360c83167 " method="POST">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
+                                    <input name="name" type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
+                                    <input name="email" type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;" >
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
-                                        style="height: 55px;">
+                                    <input name="phone" type="text" class="form-control border-0" placeholder="Your Mobile"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Location"
-                                        style="height: 55px;">
+                                    <input name="location" type="text" class="form-control border-0" placeholder="Your Location"
+                                        style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select" aria-label="Services" class="form-control border-0"
-                                        style="height: 55px;">
+                                    <select name="service" class="form-select" aria-label="Services" class="form-control border-0"
+                                        style="height: 55px;" required>
                                         <option selected>Select Service</option>
                                         <option value="solar_panel">Solar Panels</option>
                                         <option value="led_lighting">LED Lighting</option>
@@ -529,7 +529,7 @@
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Query"></textarea>
+                                    <textarea name="query" class="form-control border-0" placeholder="Query"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
