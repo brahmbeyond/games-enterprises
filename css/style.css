@@ -91,7 +91,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: white;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -101,6 +101,8 @@
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
 }
 
 .navbar .dropdown-toggle::after {
@@ -113,7 +115,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -121,6 +123,7 @@
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -142,6 +145,11 @@
     }
 }
 
+@media (max-width:527px) {
+    .navbar .navbar-brand{
+      width: 80%;
+    }
+}
 
 /*** Header ***/
 .owl-carousel-inner {
@@ -216,7 +224,7 @@
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -227,19 +235,19 @@
         max-width: 100% !important;
     }
 
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -277,19 +285,19 @@
         max-width: 100% !important;
     }
 
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -305,8 +313,8 @@
     border-bottom: 2px solid transparent;
 }
 
-#portfolio-flters li:hover,
-#portfolio-flters li.active {
+.portfolio-flters li:hover,
+.portfolio-flters li.active {
     color: var(--primary);
     border-color: var(--primary);
 }
@@ -322,7 +330,7 @@
     width: 0;
     height: 100%;
     top: 0;
-    background: var(--dark);
+    /* background: var(--dark); */
     transition: .5s;
 }
 
@@ -365,24 +373,69 @@
 
 
 /*** Quote ***/
+
+/* Styling for custom select */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f8f9fa;
+    /* Background color */
+    border: 1px solid #ced4da;
+    /* Border color */
+    padding: 10px;
+    /* Padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 100%;
+    /* Full width */
+    font-size: 16px;
+    /* Font size */
+}
+
+/* Styling for dropdown arrow */
+
+.custom-select option {
+    background-color: #fff;
+    /* Background color */
+    color: #495057;
+    /* Text color */
+
+
+}
+
+/* Styling for selected option */
+.custom-select option:checked {
+    background-color: var(--primary);
+    /* Selected option background color */
+    color: #fff;
+    /* Selected option text color */
+}
+
+
+
+
+
+
+
 @media (min-width: 992px) {
     .container.quote {
         max-width: 100% !important;
     }
 
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -431,6 +484,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -438,6 +492,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -505,19 +560,19 @@
         max-width: 100% !important;
     }
 
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
